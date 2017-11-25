@@ -10,6 +10,8 @@ import com.badlogic.gdx.utils.Array;
 import com.mygdx.game.sprites.Obstacle;
 import com.mygdx.game.sprites.Plane;
 
+import javax.swing.JLabel;
+
 import static com.mygdx.game.flappyairrace2.HEIGHT;
 import static com.mygdx.game.flappyairrace2.WIDTH;
 
@@ -118,5 +120,8 @@ public class PlayState extends State {
         if(cam.position.x - (cam.viewportWidth / 2)> groundPos2.x + ground.getWidth())
             groundPos2.add(ground.getWidth() * 2,0);
     }
+
+
+
 
 }
