@@ -41,7 +41,8 @@ public class MenuState extends State {
         sb.setProjectionMatrix(cam.combined);
         sb.begin();
         sb.draw(background, 0,0);
-        sb.draw(playBtn, cam.position.x - playBtn.getWidth()/2,cam.position.y);
+        sb.draw(playBtn, cam.position.x - playBtn.getWidth()/2,cam.position.y - playBtn.getHeight()/2);
+        sb.draw(playBtn2,cam.position.x - playBtn2.getWidth()/2,cam.position.y - playBtn.getHeight()/6);
         sb.end();
 
     }
@@ -49,5 +50,6 @@ public class MenuState extends State {
     public void dispose() {
         background.dispose();
         playBtn.dispose();
+        playBtn2.dispose();
     }
 }
